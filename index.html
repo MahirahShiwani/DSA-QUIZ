@@ -95,7 +95,7 @@
   <div id="s-start" class="screen active">
     <div class="top-badge"><div class="dot-pulse"></div> Secure Quiz System</div>
     <div class="card">
-      <div class="card-title">Quiz — DSA</div>
+      <div class="card-title">Quiz — COAL</div>
       <div class="card-sub">Add your name and roll no to start your Quiz-- Onlu 1 attempt.</div>
       <div class="rules">
         <div class="rule"><span class="rule-icon">⏱</span> Every Question has 30 sec Timer</div>
@@ -196,27 +196,17 @@ const LABELS = ['A','B','C','D'];
 // ans: 0=A, 1=B, 2=C, 3=D
 // ══════════════════════════════════════════════
 const ALL_QUESTIONS = [
-  { q: "Which data structure is primarily used to implement BFS?", opts: ["stack","Queue","List","Dictionary"], ans: 1 },
-  { q: "BFS traversal of a tree is also known as:", opts: ["Pre-order traversal","In-order traversal","Post-order traversal","Level-order traversal"], ans: 3 },
-  { q: "Which data structure is primarily used to implement DFS iteratively?", opts: ["stack","Queue","List","Dictionary"], ans: 0 },
-  { q: "Which of the following is NOT a valid DFS traversal order for a binary tree?", opts: ["Pre-order traversal","In-order traversal","Post-order traversal","Level-order traversal"], ans: 3 },
-  { q: "After one full pass of Bubble Sort on array [5, 1, 4, 2, 8], what is the array?", opts: ["[1, 4, 2, 5, 8]","[1, 5, 4, 2, 8]","[1, 4, 2, 8, 5]","[1, 2, 4, 5, 8]"], ans: 0 },
-  { q: "Insertion Sort works by:", opts: ["Repeatedly swapping adjacent elements","Building the sorted array one element at a time","Partitioning around a pivot","Merging two sorted halves"], ans: 0 },
-  { q: "What does Selection Sort do in each pass?", opts: ["Swaps adjacent elements","Finds minimum and places it at the beginning","Inserts element into correct position","Partitions around a pivot"], ans: 1 },
-  { q: "Merge Sort is based on which paradigm?", opts: ["Greedy","Dynamic Programming","Divide and Conquer","Backtracking"], ans: 2 },
-  { q: "Which pivot selection strategy gives the best average performance?", opts: ["First element","Last element","Middle element","Random element"], ans: 3 },
-  { q: "In a singly linked list, each node contains:", opts: ["Data and previous pointer","Data and next pointer","Data only","Previous and next pointers"], ans: 3 },
-  { q: "A doubly linked list node contains:", opts: ["Data and next pointer","Data and previous pointer","Data, next, and previous pointers","Data only"], ans: 2 },
-  { q: "In a circular singly linked list, the last node points to:", opts: ["NULL","The first node","Itself","The second node"], ans: 1 },
-  { q: "In a circular doubly linked list, the head's previous pointer points to:", opts: ["NULL","The Last node","Itself","The second node"], ans: 1 },
-  { q: "Stack follows which principle?", opts: ["FIFO (First In First Out)","LIFO (Last In First Out)","FILO (First In Last Out) — same as LIFO","Both B and C"], ans: 3 },
-  { q: "Which operation removes the top element from a stack?", opts: ["Push","Pop","Peek","Top"], ans: 1 },
-  { q: "A stack can be implemented using:", opts: ["Array only","Linked list only","Both array and linked list","Neither"], ans: 2 },
-  { q: "Queue follows which principle?", opts: ["LIFO","FILO","FIFO","LILO"], ans: 2},
-  { q: "Inorder traversal is ?", opts: ["Left->Root->Right","Right->Left->Root","Root->Left->Right","Left->Right->Root"], ans: 0 },
-  { q: "Preorder Traversal is?", opts: ["Left->Root->Right","Right->Left->Root","Root->Left->Right","Left->Right->Root"], ans: 2 },
-  { q: "Post Order traversal is?", opts: ["Left->Root->Right","Right->Left->Root","Root->Left->Right","Left->Right->Root"], ans: 3 },
-];
+  { q: "Which register is commonly used as an accumulator in Assembly Language?", opts: ["AX","BX","CX","DX"], ans: 0 },
+  { q: "Which symbol is used to indicate hexadecimal numbers in Assembly Language?", opts: ["#",h","%","@"], ans: 1 },
+  { q: "What does the SUB instruction perform?", opts: ["Addition","Subtraction","Multiplication","Division"], ans: 1 },
+  { q: "Which directive defines the data segment in Assembly Language?", opts: [".code",".model",".data",".code"], ans: 2 },
+  { q: "What is the function of the INT instruction?", opts: ["Interrupt call","Input transfer","Integer multiplication","Initializa task"], ans: 0 },
+  { q: "What does the CMP instruction do?","copies data","compare 2 values","clears memory","Jumps to another location"], ans: 1 },
+  { q: "Which instruction is used to jump to another part of the program?", opts: ["Mov","Push","JMP","POP"], ans: 2 },
+  { q: "What does INC instruction do?", opts: ["Decrease value by 1","Increase value by 1","Multiply by 1","Divide by 1"], ans: 1 },
+  { q: "Which instruction removes data from the stack?", opts: ["PUSH","POP","MOV","CALL"], ans: 1 },
+  { q: "To take string input from user which dos function we use?", opts: ["01h","09h","3fh","02h"], ans: 2 },
+  ];
 
 // ══════════════════════════════════════════════
 function shuffle(arr) {
